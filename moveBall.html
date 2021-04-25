@@ -1,0 +1,116 @@
+<div id="ball" style="
+  z-index:5;
+  position:absolute;
+  left:100px;
+  top:0px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:hsl(14, 90%, 50%)">
+  </div>
+  
+  <div id="ball2" style="
+  z-index:5;
+  position:absolute;
+  left:500px;
+  top:50px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:hsl(239, 90%, 50%)">
+  </div>
+
+<script>
+
+var maxX = 1000;
+var minX = 100;
+var maxY = 700;
+var minY = 100;
+var velocity = 2;
+var position = minX;
+//var positionX = minX;
+//var positionY = minY;
+var ball1 = document.getElementById('ball');
+var ball2 = document.getElementById('ball2');
+var direction = "right";
+var xDir = 1;
+var yDir = 1;
+var bWidth = 150;
+var bHeight = 150;
+
+
+// YOUR CODE (x-axis only)
+/* function moveBall(){
+  if (position < maxX && direction == "right")
+    {
+      position = position + velocity;
+      ball.style.left = position + "px";
+        if (position >= maxX)
+        {
+          direction = "left";
+        }
+    }
+    else if (position > minX && direction == "left")
+    {
+      position = position - velocity;  
+      ball.style.left = position +"px";
+        if(position <= minX)
+        {     
+          direction = "right";
+        }
+    }
+  }
+  setInterval (moveBall, 20);
+*/
+
+var ballArray = [ball1,ball2];
+    
+
+function moveBallXY()
+{  
+for (let i = 0; i < ballArray.length; i++)
+  {
+    var currBall = ballArray[i];
+    var positionX = parseInt(currBall.style.left, 10);
+    var positionY = parseInt(currBall.style.top, 10);
+
+    if (positionX >= maxX)
+    {
+      xDir = -1;
+      bWidth = bWidth - 5;
+      bHeight = bHeight - 5;
+    }
+    else if (positionX <= minX)
+    {
+      xDir = 1;
+    }
+    
+    
+    if (positionY >= maxY)
+    {
+      yDir = -1;
+      bWidth = bWidth - 5;
+      bHeight = bHeight - 5;
+    }
+    else if (positionY <= minY)
+    {
+      yDir = 1;
+    }
+    
+      positionX = positionX + ((velocity + i) * xDir);
+      console.log(positionX);
+      positionY = positionY + ((velocity + i) * yDir);
+      currBall.style.height = bHeight + "px";
+      currBall.style.width = bWidth + "px";
+      currBall.style.left = positionX + "px";
+      currBall.style.top = positionY + "px"; 
+    
+      console.log(i + " ; " + positionX);
+  }    
+}
+
+
+
+setInterval (moveBallXY, 5);
+
+</script>
