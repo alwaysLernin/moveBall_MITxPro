@@ -22,4 +22,4 @@ Initially this was used to practice object manipulation (attributes, movement, a
 
 # **Roadmap**
 
-I've found a YouTube site that presents advanced animation techniques through a series of simple and easy to follow videos. I have started a new repo where I am first building the projects alongside the presenter, reviewing and researching the new concepts that he introduces and then experiment with tweaks and modifications of the code.
+I've found a YouTube site that presents advanced animation techniques through a series of simple and easy to follow videos. I have started a new repo where I am first building the projects alongside the presenter, reviewing and researching the new concepts that he introduces and then experimenting with tweaks and modifications of the code.
