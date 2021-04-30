@@ -14,7 +14,7 @@ Initially this was used to practice object manipulation (attributes, movement, a
 + Variable initialization, modification, and retrieval
 + Introduction to DOM objects (document)
 
-# **What Frustrate Me** 
+# **What Frustrated Me** 
 
 + I couldn't figure out how to programmatically create multipe copies of Objects
   + Fortunately the following weeks lessons covered this!
