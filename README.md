@@ -1,5 +1,5 @@
 # moveBall_MITxPro
-## **Description**
+# **Description**
 
 This is an assignment from the MITxPro Coding Bootcamp that introduces object creation and manipulation.
 
